@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.texastribune.org/COMPRESSED/css/8e09a6349689.css" type="text/css" />
+    <link rel='stylesheet' href="style.css" />
+</head>
+<body>
+<div class="grid"><header>
+<h1>Interactive: Measuring Texas' Uninsured Population, Obamacare Enrollment</h1>
+<ul class="meta separator clearfix">
+<li class="byline">by <a href="http://www.texastribune.org/about/staff/becca-aaronson/">Becca Aaronson</a></li>
+<li>February 4, 2014</li>
+</ul>
+</header>
+</div>
+<div class="grid" style="margin-top: 10px;">
+  <div class="cell w-12 prose">
+    <p>For more than a decade, Texas has maintained the highest rate of people without health insurance in the nation. More than 6 million Texans don't have health insurance. The Affordable Care Act requires most people to obtain health coverage in 2014, and sets forth a variety of ways to assist the uninsured. So far, fewer than 120,000 Texans have obtained coverage through the federal health insurance marketplace. To measure the impact of ACA enrollment efforts, this interactive provides context on Texas' uninsured population.
+  </p>
+  </div>
+  <div id="canvas-hook" class="grid"></div>
+  <div class="cell w-12 prose">
+        <p>While California, a more populous state, has a larger uninsured population, Texas has the highest rate — one in four Texans lacks health coverage — and the greatest number of children, 852,000, without coverage. The graph above shows the percent of people without health insurance in 2012 in the five most populous states and the nation based on five-year estimates from the American Community Survey conducted by the census.</p>
+  </div>
+</div> 
+<div class="grid">
+    <div id="interactive-hook" class="grid select-box-row">
+      <dl class="altered-select-item">
+        <dt>Select Graph: </dt>
+      </dl>
+        <select id="who-select" class="option-select"></select>
+    </div>
+  <div class="cell w-8">
+    <div id="canvas-hookb">
+    </div>
+  </div>
+  <div class="cell w-4">
+    <div class="mapLegendContainer" id="mapLegendContainer">
+      <div class="legendScale">
+          <ul id="chart-containerb-legend" class="legendLabels"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grid">
+  <div class="cell w-12 prose">
+      <p>There isn't a simple <a href="http://www.washingtonpost.com/blogs/wonkblog/post/why-texas-has-the-highest-percentage-of-uninsured-people-in-the-us/2011/08/02/gIQA1wIdHJ_blog.html">explanation</a> for why Texas' uninsured rate is so high. Texas has a relatively large number of retail, service and agricultural-sector jobs, which traditionally don't offer employment-based coverage. The state's lax regulatory approach to the individual insurance marketplace has led to high premium prices for people who are older, female or have pre-existing conditions. Although poor children may receive coverage through state programs, Medicaid eligibility in Texas is extremely limited for adults, especially compared to states like New York and Pennsylvania. And Texas has a large immigrant population, which accounts for more than 1 million of the state's uninsured.
+      </p>
+      <p>These factors help explain why the majority of Texas' uninsured population is employed, and between the ages 18 to 34. To help this population find coverage, the Affordable Care Act allows young adults up to age 26 to stay on their parents' health plans, and offers tax credits to adults between 100 to 400 percent of the federal poverty threshold to purchase a health plan on the federal health insurance marketplace. The law initially required states to expand Medicaid eligibility to adults at or below 138 percent of the federal poverty threshold, but the U.S. Supreme Court ruled that provision should be optional. 
+      </p>
+      <p>Texas' Republican leadership has strongly opposed the law, and refused to aid enrollment efforts by expanding Medicaid eligibility or setting up a state-run health insurance marketplace. As a result, more than 1 million Texans fall into a "coverage gap," and don't have any assistance available under the Affordable Care Act. Still, local governments and community organizers are promoting enrollment in the federal marketplace. </p>
+  </div>
+</div>
+<div class="grid">
+    <div class="cell w-4">
+      <div id="canvas-hookc">
+      </div>
+    </div>
+    <div class="cell w-3 prose">
+      <div class="mapLegendContainer" id="mapLegendContainer">
+        <div class="legendTitle">Of the 6.2 Million Uninsured Texans: </div>
+        <div class="legendScale">
+           <ul class="legendLabels">
+            <li> <span style="background-color: #379D92"></span>Eligible for Medicaid/CHIP (874,000)</li>
+            <li> <span style="background-color: #FCC10F"></span>In the Coverage Gap (1,046,000)</li>
+            <li> <span style="background-color: #44ABDF"></span>Eligible for Tax Credits (1,756,000)</li>
+            <li> <span style="background-color: #3E67B0"></span>Ineligible - Higher Income, Employer Benefits (1,264,000)</li>
+            <li> <span style="background-color: #B12125"></span>Ineligible - Immigrants (1,226,000)</li>
+            <li><em>According to the <a href="http://kff.org/statedata/?state=TX">Kaiser Family Foundation</a></em></li>
+            </ul>
+            </div>
+          </div>
+      </div>
+
+  <div class="cell w-12 prose">
+    <p>So far, 118,500 Texans have picked a health plan on the federal marketplace.The U.S. Department of Health and Human Services has released limited data on enrollment, which doesn't distinguish whether the people who've purchased health plans were previously uninsured. While most of Texas' uninsured popultion is younger than 34, the majority of the people who've enrolled are between the ages of 45 to 64.
+    </p>
+    <p>
+      As this Tribune <a href="http://www.texastribune.org/2013/10/30/animation-explaining-health-insurance-marketplace/">animation</a> explains, the plans offered in the federal marketplace are tiered. Bronze plans have the lowest premiums, but cover fewer services and have higher deductibles, while platinum plans have the highest premiums, cover more services, and have low deductibles. For people who are eligible for tax credits, the amount of the credit is based on their income and the cost of the second-highest price silver plan in the region. That partially explains why the majority of Texans have purchased silver plans. 
+    </p>
+  </div>
+</div>
+<div class="grid">
+    <div id="interactive-hook" class="grid select-box-row">
+      <dl class="altered-select-item">
+        <dt>Select Graph: </dt>
+      </dl>
+      <select id="enrolled-select" class="option-select"></select>
+    </div>
+    <div class="cell w-8">
+      <div id="canvas-hookd"></div>
+    </div>
+    <div class="cell w-4">
+      <div class="mapLegendContainer" id="mapLegendContainer">
+        <div class="legendScale"></div>
+           <ul id="chart-containerd-legend" class="legendLabels"></ul>
+      </div>
+      </div>
+</div>
+<div class="grid">
+  <div class="cell w-12 prose">
+          <p> Without health insurance, many low-income Texans don't receive necessary health services. Although anyone can seek care at hospital emergency rooms, federal law only requires hospitals to stabilize a patient, and usually won't provide treatments for serious diseases, such as cancer. Federally-qualified health clinics that receive grants to subsidize basic care for low-income patients often have long wait times for an appointment, and charge patients sliding scale fees to cover their care.
+     </p><p>
+      Ultimately, hospitals, taxpayers and businesses foot the bill for people without sufficient health coverage. Hospitals reported $3.2 billion in charity costs, and $2.1 billion in bad debt in 2010, according to the Texas Health and Human Services Commission. Although hospitals receive tax revenue, federal grants and donations to cover uncompensated care, the residual costs of caring for the state's uninsured or underinsured still topped $1 billion in 2010. Those additional costs lead to higher prices, and higher premiums for people who are uninsured.
+    </p>
+  </div>
+</div>
+<div class="grid footer">
+      Source: <a href="http://factfinder2.census.gov/faces/nav/jsf/pages/index.xhtml">U.S. Census Bureau - American Community Survey</a>, <a href="http://aspe.hhs.gov/health/reports/2014/MarketPlaceEnrollment/Jan2014/ib_2014jan_enrollment.pdf">U.S. Dept. of Health and Human Services</a>, <a href="http://kff.org/statedata/?state=TX">Kaiser Family Foundation</a>| <a href="http://www.texastribune.org/library/data/data-feedback/">Feedback</a> | Follow <a href="http://www.twitter.com/tribnerds">@TribNerds</a> on Twitter.
+</div>
+
+<script id="chart-containerb-legendinfo" type="text/template">
+              <li> <span style="background-color: <%= color %>"></span><%= name %> (<%= commas(data) %>%)</li>
+</script>
+<script id="chart-containerd-legendinfo" type="text/template">
+              <li> <span style="background-color: <%= color %>"></span><%= name %>: (<%= commas(data) %>%)</li>
+</script>
+<script src="Chart.js"></script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://s3.amazonaws.com/static.texastribune.org/common/vendor/jquery/1.7.2/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write('<script src="https://s3.amazonaws.com/static.texastribune.org/common/vendor/jqueryui/jquery-ui-1.8.18.min.js"><\/script>')</script>
+<script src="https://s3.amazonaws.com/static.texastribune.org/common/vendor/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+ -->
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="datab.js"></script>
+
+<script type="text/javascript">// <![CDATA[
+(function() {
+    var cssLink = $("<link>");
+    var cssLink2 = $("<link>");
+    $("head").append(cssLink);
+    cssLink.attr({
+      rel:  "stylesheet",
+      type: "text/css",
+      href: "//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css"
+    });
+ 
+    $("head").append(cssLink2);
+    cssLink2.attr({
+      rel:  "stylesheet",
+      type: "text/css",
+      href: "//s3.amazonaws.com/static.texastribune.org/data/twhp-interactive/style.css"
+    });
+ 
+    $('#canvas-hook').append($("<canvas>").addClass('chart-container').attr('id', 'chart-container'));
+    $('#canvas-hookb').append($("<canvas>").addClass('chart-container').attr('id', 'chart-containerb'));
+    $('#canvas-hookc').append($("<canvas>").addClass('chart-container').attr('id', 'chart-containerc'));
+    $('#canvas-hookd').append($("<canvas>").addClass('chart-container').attr('id', 'chart-containerd'));
+})();
+// ]]></script>
+
+<script type="text/javascript">// <![CDATA[
+
+var Who = Backbone.Model.extend({ 
+    returnData: function() {
+      var self = this;
+      var payload = [];
+
+      _.each(this.get('xdata'), function(v,i) {
+          payload.push({
+            value : self.get('xdata')[i],
+            color : self.get('colors')[i],
+            label : self.get('xlabels')[i],
+            labelColor : '#fff',
+            labelFontSize : '1em',
+            labelAlign: 'center'
+          });
+        });
+      return payload;
+    },
+
+    returnLegend: function() {
+      var self = this;
+      var payload = [];
+
+      _.each(this.get('xlabels'), function(v,i) {
+        payload.push ({
+          name : self.get('xlabels')[i],
+          color : self.get('colors')[i],
+          data : self.get('xdata')[i]
+        });
+      });
+      console.log(payload);
+      return payload;
+    }
+
+
+});
+
+var Enrolled = Backbone.Model.extend({ 
+    returnData: function() {
+      var self = this;
+      var payload = [];
+
+      _.each(this.get('ydata'), function(v,i) {
+          payload.push({
+            value: self.get('ydata')[i],
+            color: self.get('colors')[i],
+            label : self.get('ylabels')[i],
+            labelColor : '#fff',
+            labelFontSize : '1em',
+            labelAlign: 'center'
+          });
+        });
+      return payload;
+    },
+
+    returnLegendb: function() {
+      var self = this;
+      var payload = [];
+
+      _.each(this.get('ylabels'), function(v,i) {
+        payload.push ({
+          name : self.get('ylabels')[i],
+          color : self.get('colors')[i],
+          data : self.get('ydata')[i]
+        });
+      });
+      return payload;
+    }
+
+});
+
+var Uninsured = Backbone.Collection.extend({
+  model: Who, 
+  comparator: 'who'
+});
+
+var Insured = Backbone.Collection.extend({
+  model: Enrolled, 
+  comparator: 'enrolled'
+});
+
+var WhoSelectView = Backbone.View.extend({
+  el: '#who-select',
+ 
+  events: {
+    'change': 'selectNewActiveWho'
+  },
+ 
+  initialize: function() {
+    this.listenTo(this.collection, 'reset', this.render);
+  },
+ 
+  render: function() {
+    var payload = [];
+ 
+    this.collection.each(function(model) {
+      var view = new IndividualSelectView({model: model});
+      payload.push(view.render().el);
+    });
+ 
+    this.$el.append(payload);
+  },
+ 
+  selectNewActiveWho: function() {
+    var val = this.$el.val();
+    var id = this.collection.findWhere({id: val});
+ 
+    activeWho.set(id);
+  },
+ 
+  setActiveValue: function(val) {
+    this.$el.val(val);
+  }
+});
+ 
+var IndividualSelectView = Backbone.View.extend({
+  tagName: 'option',
+ 
+  template: _.template('<%= id %>'),
+ 
+  render: function() {
+    this.$el.html(this.template(this.model.toJSON())).attr('value', this.model.get('id'));
+    return this;
+  }
+});
+
+var LegendView = Backbone.View.extend({
+  el: '#chart-containerb-legend',
+
+  template: _.template($('#chart-containerb-legendinfo').html()),
+
+  initialize: function() {
+    this.listenTo(activeWho, 'add', this.render);
+  },
+  render: function(model) {
+    var self = this;
+    var payload = [];
+    _.each(model.returnLegend(), function (v,i) {
+      payload.push(self.template(v));
+    });
+    this.$el.html(payload.join(""));
+    return this;
+  }
+});
+
+var LegendViewB = Backbone.View.extend({
+  el: '#chart-containerd-legend',
+
+  template: _.template($('#chart-containerd-legendinfo').html()),
+
+  initialize: function() {
+    this.listenTo(activeEnrolled, 'add', this.render);
+  },
+  render: function(model) {
+    var self = this;
+    var payload = [];
+    _.each(model.returnLegendb(), function (v,i) {
+      payload.push(self.template(v));
+    });
+    this.$el.html(payload.join(""));
+    return this;
+  }
+});
+
+
+var EnrolledSelectView = Backbone.View.extend({
+  el: '#enrolled-select',
+ 
+  events: {
+    'change': 'selectNewActiveEnrolled'
+  },
+ 
+  initialize: function() {
+    this.listenTo(this.collection, 'reset', this.render);
+  },
+ 
+  render: function() {
+    var payload = [];
+ 
+    this.collection.each(function(model) {
+      var view = new IndividualSelectViewb({model: model});
+      payload.push(view.render().el);
+    });
+ 
+    this.$el.append(payload);
+  },
+ 
+  selectNewActiveEnrolled: function() {
+    var val = this.$el.val();
+    var id = this.collection.findWhere({id: val});
+ 
+    activeEnrolled.set(id);
+  },
+ 
+  setActiveValue: function(val) {
+    this.$el.val(val);
+  }
+});
+ 
+var IndividualSelectViewb = Backbone.View.extend({
+  tagName: 'option',
+ 
+  template: _.template('<%= id %>'),
+ 
+  render: function() {
+    this.$el.html(this.template(this.model.toJSON())).attr('value', this.model.get('id'));
+    return this;
+  }
+});
+ 
+var BarChartView = Backbone.View.extend({
+  el: '#chart-container',
+  labels: ['Texas',   'Florida',  'California',   'United States',  'New York',   'Pennsylvania'],
+ 
+  initialize: function() {
+    this.renderChart();
+  },
+ 
+  renderChart: function(model) {
+    var parentWidth = this.$el.parent().width();
+    var height = $(window).width() > 767 ? 400 : 350;
+ 
+    this.$el.attr({width: parentWidth, height: height});
+ 
+    this.chart = new Chart(this.el.getContext('2d'));
+ 
+    this.chart.Bar({
+      labels: this.labels,
+      datasets: [{
+        fillColor : 'rgba(55, 157, 146, 0.5)',
+        strokeColor : 'rgba(55, 157, 146, 1)',
+        data : [23,   20.5,   17.8,   14.9,   11.3,   9.7]
+      }]
+    },{
+      scaleFontFamily: "'Helvetica', 'Arial', sans-serif",
+      scaleLabel : '<%=value%>%',
+      scaleOverride: true,
+      scaleSteps: 10,
+      scaleStepWidth: 2.5,
+      scaleStartValue: 0
+    });
+  }
+});
+ 
+var BarChartViewB = Backbone.View.extend({
+  el: '#chart-containerc',
+  labels: [''],
+ 
+  initialize: function() {
+    this.renderChart();
+  },
+  renderChart: function(model) {
+    var parentWidth = this.$el.parent().width();
+    var height = $(window).width() > 767 ? 400 : 350;
+ 
+    this.$el.attr({width: parentWidth, height: height});
+ 
+    this.chart = new Chart(this.el.getContext('2d'));
+ 
+    this.chart.StackedBar({
+      labels: this.labels,
+      tooltip: true,
+      datasets: [{
+        fillColor : 'rgba(177, 33, 37, 0.75)',
+        strokeColor : 'rgba(177, 33, 37, 1)',
+        data : [1226000]
+      },{
+        fillColor : 'rgba(62 , 103, 176, 0.75)',
+        strokeColor : 'rgba(62 , 103, 176, 1)',
+        data : [1264000]
+      },{
+        fillColor : 'rgba(68 , 171, 223, 0.75)',
+        strokeColor : 'rgba(68 , 171, 223, 1)',
+        data : [1756000]
+      },{
+        fillColor : 'rgba(252 , 193, 15, 0.75)',
+        strokeColor : 'rgba(252 , 193, 15, 1)',
+        data : [1046000]
+      },{
+        fillColor : 'rgba(55, 157, 146, 0.75)',
+        strokeColor : 'rgba(55, 157, 146, 1)',
+        data : [874000]
+      }]
+    },{
+      scaleFontFamily: "'Helvetica', 'Arial', sans-serif",
+      scaleLabel : '<%=commas(value)%>',
+      scaleOverride: true,
+      scaleSteps: 13,
+      scaleStepWidth: 500000
+    });
+  }
+});
+
+var PieChartView = Backbone.View.extend({
+  el: '#chart-containerb',
+ 
+  initialize: function() {
+    this.listenTo(activeWho, 'add', this.renderChart);
+  },
+
+  renderChart: function(model) {
+    var parentWidth = this.$el.parent().width();
+    var height = $(window).width() > 767 ? 400 : 350;
+ 
+    this.$el.attr({width: parentWidth, height: height});
+ 
+    this.chart = new Chart(this.el.getContext('2d'));
+    var data = model.returnData();
+
+    this.chart.Pie(data, {
+      animationSteps : 25,
+      animationEasing: "linear"  
+    });
+ 
+  }
+});
+
+var PieChartViewB = Backbone.View.extend({
+  el: '#chart-containerd',
+ 
+  initialize: function() {
+    this.listenTo(activeEnrolled, 'add', this.renderChart);
+  },
+
+  renderChart: function(model) {
+    var parentWidth = this.$el.parent().width();
+    var height = $(window).width() > 767 ? 400 : 350;
+ 
+    this.$el.attr({width: parentWidth, height: height});
+ 
+    this.chart = new Chart(this.el.getContext('2d'));
+    var data = model.returnData();
+
+    this.chart.Pie(data, {
+      animationSteps : 50,
+      animationEasing: "linear"  
+    });
+ 
+  }
+});
+
+
+function commas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+ 
+var uninsured = new Uninsured();
+var activeWho = new Backbone.Collection();
+var whoSelectView = new WhoSelectView({collection: uninsured});
+var insured = new Insured();
+var activeEnrolled = new Backbone.Collection();
+var enrolledSelectView = new EnrolledSelectView({collection: insured});
+ 
+new BarChartView();
+new BarChartViewB();
+new PieChartView();
+new PieChartViewB();
+new LegendView();
+new LegendViewB();
+ 
+uninsured.reset(whoData);
+activeWho.set(uninsured.findWhere({id: 'Age'}));
+insured.reset(enrolledData);
+activeEnrolled.set(insured.findWhere({id: 'Age'}));
+
+// ]]></script>
+
+
+</div>
+</div>
+
+
+</body>
+</html>
