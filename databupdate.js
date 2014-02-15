@@ -1,0 +1,6 @@
+var enrolledData = [
+{'id':'Age', ylabels: ['Under 18', 	'18-34', 	'35-54', 	'55 and older'], ydata: [7, 27, 39, 27], colors: ['#B12125', '#3E67B0', '#44ABDF', '#FCC10F'], title: 'Who has Enrolled by Age', us: ['6%', '25%', '38%', '31%'], 	tx: ['7%', '27%', '39%', '27%'], 	ca: ['6%', '25%', '40%', '28%'], 	fl: ['3%', '23%', '41%', '33%'] },
+{'id':'Plan Type', ylabels: ['Bronze', 'Silver', 'Gold', 'Platinum', 'Catastrophe'], ydata: [21, 62, 11, 4, 1], colors: ['#B12125', '#3E67B0', '#44ABDF', '#FCC10F', '#379D92', '#993D88'], title: 'Who has Enrolled by Type of Health Plan', us: ['19%', '62%', '12%', '7%', '1%'], 	tx: ['21%', '62%', '11%', '4%', '1%'], 	ca: ['23%', '63%', '7%', '7%', '1%'], 	fl: ['14%', '65%', '9%', '12%', '1%']},
+{'id':'Gender', ylabels: ['Female', 	'Male'], ydata: [56, 44], colors: ['#B12125', '#3E67B0'], title: 'Who has Enrolled by Gender', us: ['55%', '45%'], 	tx: ['56%', '44%'], 	ca: ['54%', '46%'], 	fl: ['56%', '44%']},
+{'id':'Financial Status', ylabels: ['Eligible for Tax Credits', 	'Not Eligible'], ydata: [79, 21], colors: ['#B12125', '#3E67B0'], title: 'Who has Enrolled by Gender', us: ['82%', '18%'], 	tx: ['79%', '21%'], 	ca: ['87%', '13%'], 	fl: ['88%', '12%']}
+]
